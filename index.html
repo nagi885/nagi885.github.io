@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <base target="_blank">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人简历</title>
+  <script src="https://at.alicdn.com/t/font_701076_x884vlms3ys0pb9.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+  <!-- 存储服务 -->
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="topNavBar" class="topNavBar clearfix">
+    <a class="logo" href="#" alt="logo">
+      <span class="rs">RS</span>
+      <span class="card">card</span>
+    </a>
+    <div class="topNavBar-inner clearfix">
+      <nav>
+        <ul class="clearfix" id="item">
+          <li>
+            <a href="userCard">关于</a>
+          </li>
+          <li>
+            <a href="skills">技能</a>
+          </li>
+          <li class="menuTigger">
+            <a href="Portfolio">作品</a>
+            <ul class="submenu">
+              <li>苹果轮播</li>
+              <li>Canvas画板</li>
+              <li>导航网站</li>
+            </ul>
+          </li>
+          <li class="menuTigger">
+            <a href="#">博客</a>
+            <ul class="submenu">
+              <li>JS数据类型</li>
+              <li>原型链</li>
+              <li>AJAX</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">日历</a>
+          </li>
+          <li>
+            <a href="#">联系方式</a>
+          </li>
+          <li>
+            <a href="#">投资组合</a>
+          </li>
+          <li>
+            <a href="#">经验</a>
+          </li>
+          <li>
+            <a href="#">其他</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="mask"></div>
+    <div id="siteWelcome" class="site-welcome active">
+      <div class="loading"></div>
+    </div>
+  </div>
+  <main>
+    <div class="userCard" data-x id="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./images/222.jpg" alt="头像" width="247" height="299">
+        </div>
+        <div class="text">
+          <span class="welcome">Hello
+            <span class="triangle"></span>
+          </span>
+          <h1>杨青松</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>22</dd>
+            <dt>所在城市</dt>
+            <dd>广东</dd>
+            <dt>邮箱</dt>
+            <dd>1260013987@qq.com</dd>
+            <dt>手机</dt>
+            <dd>17620913420</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhihu"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-CN_jianshu"></use>
+          </svg>
+        </a>
+        <a href="https://github.com/yqs19960816">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tuitetwitter43"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <p class="downloadResume">
+      <a class="button" href="#">下载 PDF 简历</a>
+    </p>
+    <p class="selfIntroduction">
+      方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。
+      <br> 技能：前端开发，Rails 开发，Node.js 开发
+    </p>
+
+    <section class="skills" data-x id="skills">
+      <h2>技能</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>HTML 5 &amp; CSS 3</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:60%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:65%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>jQuery</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:50%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:40%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:30%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>HTTP</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:30%"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="Portfolio" id="Portfolio" data-x>
+      <h2>作品集</h2>
+      <nav>
+        <ol class="clearfix">
+          <li id="PortfolioAll">AppleRotation</li>
+          <li id="PortfolioFramework">canvasPainter</li>
+          <li id="PortfolioVallina">NavigationWebsite</li>
+        </ol>
+      </nav>
+      <!-- MVC中的vivw视图 -->
+      <div id="mySlides">
+        <!-- 变成轮播，使用插件 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <img src="./images/work/Apple-rotation.jpg" class="swiper-slide">
+            <img src="./images/work/canvas-demo.jpg" class="swiper-slide">
+            <img src="./images/work/nav-page.jpg" class="swiper-slide">
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- 如果需要滚动条 -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="message">
+        <h2>留言板</h2>
+    <ol id="messageList"></ol>
+    <form id="postMessageForm">
+        <label for="name">姓名</label><input type="text" name="name" id="name">
+        <label for="content">内容</label><input type="text" name="content" id="content">
+      <input type="submit" value="提交">
+    </form>
+  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <!-- 模块化 -->
+    <script src="./js/init.js"></script>
+    <script src="./js/NavigationHighlight.js"></script>
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/smoothly-navigation.js"></script>
+    <script src="./js/message.js"></script>
+  </main>
+</body>
+
+</html>
