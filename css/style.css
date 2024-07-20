@@ -58,7 +58,7 @@ hr {
   background: #ccc;
   z-index: 1;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 .site-welcome.active {
   display: flex;
@@ -331,7 +331,7 @@ hr {
 
 .userCard>footer.media {
   background-color: #E8676B;
-  text-align: center;
+  text-align: left;
   padding: 25px 0px;
 }
 
@@ -373,7 +373,7 @@ body>main .button {
 }
 
 body>main .downloadResume {
-  text-align: center;
+  text-align: left;
 }
 
 body>main .button:hover {
@@ -383,7 +383,7 @@ body>main .button:hover {
 .selfIntroduction {
   max-width: 930px;
   margin: 20px auto;
-  text-align: center;
+  text-align: left;
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
@@ -405,7 +405,7 @@ section.skills>h2 {
   font-size: 34px;
   line-height: 1.2;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
 }
 
 section.skills>ol {
@@ -453,7 +453,7 @@ section.skills.offset .progress {
   transform: translateX(-100%)
 }
 section.Portfolio {
-  text-align: center;
+  text-align: left;
   margin-bottom: 100px;
 }
 
@@ -461,7 +461,7 @@ section.Portfolio>nav {
   display: inline-block;
   vertical-align: top;
   margin: 32px;
-  text-align: center;
+  text-align: left;
   font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
