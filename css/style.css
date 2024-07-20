@@ -58,7 +58,7 @@ hr {
   background: #ccc;
   z-index: 1;
   justify-content: center;
-  align-items: left;
+  align-items: middle;
 }
 .site-welcome.active {
   display: flex;
